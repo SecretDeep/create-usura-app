@@ -1,0 +1,17 @@
+{
+  "name": "create-usura-app",
+  "version": "1.0.0",
+  "description": "Create a new project from the usura-template",
+  "type": "module",
+  "bin": {
+    "create-usura-app": "./index.js"
+  },
+  "files": ["index.js"],
+  "keywords": ["create", "template", "usura", "cloudflare", "workers"],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SecretDeep/create-usura-app"
+  }
+}
