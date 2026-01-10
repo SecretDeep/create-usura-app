@@ -48,8 +48,6 @@ try {
 
   setup.on("close", (code) => {
     if (code === 0) {
-      console.log("\n📥 Regenerating lockfile...\n")
-      execSync("bun install", { cwd: targetDir, stdio: "inherit" })
       execSync("git add -A", { cwd: targetDir, stdio: "ignore" })
       execSync('git commit --no-verify -m "Initial commit"', {
         cwd: targetDir,
