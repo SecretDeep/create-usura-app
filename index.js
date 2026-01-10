@@ -41,6 +41,8 @@ try {
 
   setup.on("close", (code) => {
     if (code === 0) {
+      execSync("git add -A", { cwd: targetDir, stdio: "ignore" })
+      execSync('git commit -m "Initial commit"', { cwd: targetDir, stdio: "ignore" })
       console.log(`\n🎉 Done! To get started:\n`)
       console.log(`   cd ${projectName}`)
       console.log(`   bun run dev\n`)
