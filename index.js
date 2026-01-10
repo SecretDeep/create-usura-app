@@ -34,7 +34,11 @@ try {
   execSync("git init", { cwd: targetDir, stdio: "ignore" })
 
   console.log("\n📥 Installing dependencies...\n")
-  execSync("bun install", { cwd: targetDir, stdio: "inherit" })
+  execSync("bun install", {
+    cwd: targetDir,
+    stdio: "inherit",
+    env: { ...process.env, SKIP_ENV_CHECK: "1" },
+  })
 
   console.log("")
   const setup = spawn("bun", ["run", "setup"], {
