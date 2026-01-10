@@ -22,7 +22,7 @@ if (existsSync(targetDir)) {
 console.log(`\n📦 Creating ${projectName}...\n`)
 
 try {
-  execSync(`git clone --depth 1 https://github.com/${TEMPLATE_REPO}.git ${projectName}`, {
+  execSync(`git clone --depth 1 git@github.com:${TEMPLATE_REPO}.git ${projectName}`, {
     stdio: "inherit",
   })
 
