@@ -47,8 +47,10 @@ try {
         cwd: targetDir,
         stdio: "ignore",
       })
-      console.log("\n🎉 Done! To get started:\n")
+      console.log("\n🎉 Done! Next steps:\n")
       console.log(`   cd ${projectName}`)
+      console.log(`   bun alchemy configure --profile ${projectName}`)
+      console.log("   code . && reopen in Dev Container")
       console.log("   bun run dev\n")
     }
     process.exit(code ?? 0)
