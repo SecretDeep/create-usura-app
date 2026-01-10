@@ -22,9 +22,12 @@ if (existsSync(targetDir)) {
 console.log(`\n📦 Creating ${projectName}...\n`)
 
 try {
-  execSync(`git clone --depth 1 git@github.com:${TEMPLATE_REPO}.git ${projectName}`, {
-    stdio: "inherit",
-  })
+  execSync(
+    `git clone --depth 1 git@github.com:${TEMPLATE_REPO}.git ${projectName}`,
+    {
+      stdio: "inherit",
+    }
+  )
 
   rmSync(resolve(targetDir, ".git"), { recursive: true, force: true })
 
@@ -44,10 +47,13 @@ try {
       console.log("\n📥 Regenerating lockfile...\n")
       execSync("bun install", { cwd: targetDir, stdio: "inherit" })
       execSync("git add -A", { cwd: targetDir, stdio: "ignore" })
-      execSync('git commit --no-verify -m "Initial commit"', { cwd: targetDir, stdio: "ignore" })
-      console.log(`\n🎉 Done! To get started:\n`)
+      execSync('git commit --no-verify -m "Initial commit"', {
+        cwd: targetDir,
+        stdio: "ignore",
+      })
+      console.log("\n🎉 Done! To get started:\n")
       console.log(`   cd ${projectName}`)
-      console.log(`   bun run dev\n`)
+      console.log("   bun run dev\n")
     }
     process.exit(code ?? 0)
   })

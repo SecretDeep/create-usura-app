@@ -6,8 +6,16 @@
   "bin": {
     "create-usura-app": "./index.js"
   },
-  "files": ["index.js"],
-  "keywords": ["create", "template", "usura", "cloudflare", "workers"],
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "create",
+    "template",
+    "usura",
+    "cloudflare",
+    "workers"
+  ],
   "author": "",
   "license": "MIT",
   "repository": {
