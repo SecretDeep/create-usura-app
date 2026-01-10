@@ -28,6 +28,8 @@ try {
 
   rmSync(resolve(targetDir, ".git"), { recursive: true, force: true })
 
+  execSync("git init", { cwd: targetDir, stdio: "ignore" })
+
   console.log("\n📥 Installing dependencies...\n")
   execSync("bun install", { cwd: targetDir, stdio: "inherit" })
 
