@@ -9,15 +9,8 @@
   "files": [
     "index.js"
   ],
-  "keywords": [
-    "create",
-    "template",
-    "usura",
-    "cloudflare",
-    "workers"
-  ],
   "author": "",
-  "license": "MIT",
+  "license": "UNLICENSED",
   "repository": {
     "type": "git",
     "url": "https://github.com/SecretDeep/create-usura-app"
