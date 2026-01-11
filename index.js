@@ -50,6 +50,7 @@ try {
       console.log("\n🎉 Done! Next steps:\n")
       console.log(`   cd ${projectName}`)
       console.log(`   bun alchemy configure --profile ${projectName}`)
+      console.log("   Add ANTHROPIC_API_KEY to .env (https://console.anthropic.com/settings/keys)")
       console.log("   code . && reopen in Dev Container")
       console.log("   bun run dev\n")
     }
