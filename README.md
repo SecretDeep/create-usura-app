@@ -5,13 +5,7 @@ Create a new project from the usura-template.
 ## Usage
 
 ```bash
-bunx create-usura-app my-app
-```
-
-Or with npm:
-
-```bash
-npx create-usura-app my-app
+bunx github:SecretDeep/create-usura-app <name of my app>
 ```
 
 This will:
